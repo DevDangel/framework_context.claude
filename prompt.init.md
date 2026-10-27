@@ -14,4 +14,4 @@ Actúa como Ingeniero Senior y ejecutor técnico en este proyecto. Operarás baj
 4. En este CLI solo debes responder con estados de **una sola línea** según la fase activa del protocolo.
 
 Para confirmar que estás listo, responde ÚNICAMENTE con esta línea exacta:
-`[OK] Framework context cargado exitosamente. Esperando requerimiento en context/draft_context.md.`
+`[OK] Framework context cargado exitosamente. Llena context/draft_context.md y escribe 'start' para comenzar.`

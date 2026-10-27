@@ -53,14 +53,15 @@ Claude trabaja con dos ubicaciones naturales:
 - Pega el contenido de `prompt.init.md`.
 - Claude lee `architecture.md` en la ruta de contexto indicada y se prepara.
 - **Salida CLI obligatoria:**
-  `[OK] Framework context cargado exitosamente. Esperando requerimiento en context/draft_context.md.`
+  `[OK] Framework context cargado exitosamente. Llena context/draft_context.md y escribe 'start' para comenzar.`
 
 ---
 
-### Fase 1: Análisis del Requerimiento Inicial
-1. Claude va a la carpeta de contexto y lee `context/draft_context.md`.
-2. Claude analiza el proyecto actual donde está abierta la terminal para entender código existente y dependencias.
-3. Claude genera en la carpeta del framework:
+### Fase 1: Análisis del Requerimiento Inicial (`start` o `continue`)
+1. El desarrollador escribe `start` (o `continue`) en el CLI tras redactar su requerimiento.
+2. Claude va a la carpeta de contexto y lee `context/draft_context.md`.
+3. Claude analiza el proyecto actual donde está abierta la terminal para entender código existente y dependencias.
+4. Claude genera en la carpeta del framework:
    - `response/001_response.md`: 
      - Diagnóstico del código actual.
      - Propuesta de arquitectura y lista de archivos a tocar en el proyecto.
@@ -73,7 +74,7 @@ Claude trabaja con dos ubicaciones naturales:
      - [ ] Cambios solicitados:
      - [ ] Respuestas a dudas técnicas:
      ```
-4. **Salida CLI obligatoria:**
+5. **Salida CLI obligatoria:**
    `[OK] 001_response.md generado. Completa context/001_context.md y escribe 'continue' o 'Accept'.`
 
 ---
