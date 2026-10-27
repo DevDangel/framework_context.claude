@@ -1,0 +1,7 @@
+# Ignore transient iteration files
+/context/00*_context.md
+/response/00*_response.md
+
+# Keep structure and sessions
+!/context/draft_context.md
+!/librarie_sessions/.gitkeep
